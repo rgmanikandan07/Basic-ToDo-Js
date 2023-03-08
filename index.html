@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+</head>
+<body>
+    <div class="container">
+        <h3>Text Here...</h3>
+        <input type="text" id="inbox"/>
+        <button id="btn">Click</button>
+    </div>
+    <div class="extra" id="exx">
+
+    </div>
+
+    <script>
+
+        let inputid = document.getElementById("inbox")
+        let btnid = document.getElementById("btn")
+        let exxx = document.getElementById("exx")
+
+        btnid.addEventListener('click',function(){
+            let paragraph = document.createElement("p")
+            paragraph.inneHTML = inputid.value; 
+            exx.appendChiled(paragraph);
+        });
+
+
+
+
+
+
+    </script>
+
+</body>
+</html>
